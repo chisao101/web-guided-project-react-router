@@ -38,6 +38,9 @@ export default function App(props) {
         <Route exact path="/">
           <Home />
         </Route>
+        <Route path="/items-list/:itemID">
+          <Item items={stock} />
+        </Route>
         <Route path="/items-list">
           <ItemsList items={stock} />
         </Route>
